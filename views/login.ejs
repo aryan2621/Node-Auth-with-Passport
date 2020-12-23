@@ -1,0 +1,22 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<h1>Login</h1>
+<% if(messages.error){ %> 
+    <%= messages.error  %> 
+    <% } %> 
+<form action="/login" method="post">
+    <div>
+
+
+        <label for="email"> Email</label>
+        <input type="email" id="email" name="email" required />
+        <br>
+
+        <label for="password">Passowrd</label>
+        <input type="password" id="password" name="password" required />
+        <br>
+
+    </div>
+    <button type="submit">Login</button>
+</form>
+<a href="/register">Register</a>
